@@ -36,8 +36,14 @@ const Board = () => {
         newScores.red += 1;
       }
       setScores(newScores);
-      setTimeout(() => setSquares(Array(9).fill(null)), 2000);
+      setTimeout(() => resetBoard(), 2000);
+    } else if (newSquares.every(square => square !== null)) {
+      setTimeout(() => resetBoard(), 2000);
     }
+  };
+
+  const resetBoard = () => {
+    setSquares(Array(9).fill(null));
   };
 
   const renderSquare = (i) => {
@@ -64,6 +70,7 @@ const Board = () => {
           {renderSquare(8)}
         </div>
       </div>
+      <button className="reset-button" onClick={resetBoard}>Reset Game</button>
     </div>
   );
 };
