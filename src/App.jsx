@@ -1,7 +1,7 @@
 import React from 'react';
 import Board from './components/Board';
 import './App.css';
-
+import './index.css'
 const App = () => {
   return (
     <div className="app">

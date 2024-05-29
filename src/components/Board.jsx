@@ -36,9 +36,9 @@ const Board = () => {
         newScores.red += 1;
       }
       setScores(newScores);
-      setTimeout(() => resetBoard(), 2000);
+      setTimeout(() => resetBoard(), 1000);
     } else if (newSquares.every(square => square !== null)) {
-      setTimeout(() => resetBoard(), 2000);
+      setTimeout(() => resetBoard(), 1000);
     }
   };
 
