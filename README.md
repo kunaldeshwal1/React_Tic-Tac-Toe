@@ -1,8 +1,11 @@
-# React + Vite
+# Tic Tac Toe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### src/ScoreBoard.jsx
+This file displays the players' scores.
 
-Currently, two official plugins are available:
+### src/Square.jsx 
+This file gives the color of each play: blue for X and red for O.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### src/Board.jsx
+This is the project's main file in which the main functionality is implemented. This file contains how the winner is selected, and how the board is being reset after each box is full.At the end of the file, the code calculates how a winner will be selected as it moves. If it matches the horizontal, vertical, or diagonal lines.
+
